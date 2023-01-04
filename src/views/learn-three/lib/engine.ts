@@ -22,18 +22,9 @@ class Engine {
     camera.position.set(100,100,100)
     camera.lookAt(new Vector3(0,0,0))
     camera.up = new Vector3(0,1,0)
-   
-   
-
+  
     const scene = new Scene()
  
-
-    const axeshelper:AxesHelper  = new AxesHelper(500)
-    const gridHelper:GridHelper  = new GridHelper(500,20,'rgb(200,200,200)','rgb(100,100,100)')
-
-    scene.add(axeshelper)
-    scene.add(gridHelper)
-
     const stats:Stats = Stats()
     const statsDom = stats.domElement
     statsDom.style.position = 'fixed'
