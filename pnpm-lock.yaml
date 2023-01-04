@@ -1,0 +1,1282 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@types/react': ^18.0.26
+  '@types/react-dom': ^18.0.9
+  '@types/three': '>= 0.125.0'
+  '@vitejs/plugin-react-swc': ^3.0.0
+  ahooks: ^3.7.4
+  less: ^4.1.3
+  react: ^18.2.0
+  react-dom: ^18.2.0
+  react-router-dom: ^6.6.1
+  three: ^0.141.0
+  typescript: ^4.9.3
+  vis-three: 0.5.3
+  vite: ^4.0.0
+
+dependencies:
+  ahooks: 3.7.4_react@18.2.0
+  react: 18.2.0
+  react-dom: 18.2.0_react@18.2.0
+  react-router-dom: 6.6.1_biqbaboplfbrettd7655fr4n2y
+  three: 0.141.0
+  vis-three: 0.5.3
+
+devDependencies:
+  '@types/react': 18.0.26
+  '@types/react-dom': 18.0.10
+  '@types/three': 0.147.0
+  '@vitejs/plugin-react-swc': 3.0.1_vite@4.0.3
+  less: 4.1.3
+  typescript: 4.9.4
+  vite: 4.0.3_less@4.1.3
+
+packages:
+
+  /@esbuild/android-arm/0.16.12:
+    resolution: {integrity: sha512-CTWgMJtpCyCltrvipZrrcjjRu+rzm6pf9V8muCsJqtKujR3kPmU4ffbckvugNNaRmhxAF1ZI3J+0FUIFLFg8KA==}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/android-arm64/0.16.12:
+    resolution: {integrity: sha512-0LacmiIW+X0/LOLMZqYtZ7d4uY9fxYABAYhSSOu+OGQVBqH4N5eIYgkT7bBFnR4Nm3qo6qS3RpHKVrDASqj/uQ==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/android-x64/0.16.12:
+    resolution: {integrity: sha512-sS5CR3XBKQXYpSGMM28VuiUnbX83Z+aWPZzClW+OB2JquKqxoiwdqucJ5qvXS8pM6Up3RtJfDnRQZkz3en2z5g==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/darwin-arm64/0.16.12:
+    resolution: {integrity: sha512-Dpe5hOAQiQRH20YkFAg+wOpcd4PEuXud+aGgKBQa/VriPJA8zuVlgCOSTwna1CgYl05lf6o5els4dtuyk1qJxQ==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/darwin-x64/0.16.12:
+    resolution: {integrity: sha512-ApGRA6X5txIcxV0095X4e4KKv87HAEXfuDRcGTniDWUUN+qPia8sl/BqG/0IomytQWajnUn4C7TOwHduk/FXBQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/freebsd-arm64/0.16.12:
+    resolution: {integrity: sha512-AMdK2gA9EU83ccXCWS1B/KcWYZCj4P3vDofZZkl/F/sBv/fphi2oUqUTox/g5GMcIxk8CF1CVYTC82+iBSyiUg==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/freebsd-x64/0.16.12:
+    resolution: {integrity: sha512-KUKB9w8G/xaAbD39t6gnRBuhQ8vIYYlxGT2I+mT6UGRnCGRr1+ePFIGBQmf5V16nxylgUuuWVW1zU2ktKkf6WQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-arm/0.16.12:
+    resolution: {integrity: sha512-vhDdIv6z4eL0FJyNVfdr3C/vdd/Wc6h1683GJsFoJzfKb92dU/v88FhWdigg0i6+3TsbSDeWbsPUXb4dif2abg==}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-arm64/0.16.12:
+    resolution: {integrity: sha512-29HXMLpLklDfmw7T2buGqq3HImSUaZ1ArmrPOMaNiZZQptOSZs32SQtOHEl8xWX5vfdwZqrBfNf8Te4nArVzKQ==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-ia32/0.16.12:
+    resolution: {integrity: sha512-JFDuNDTTfgD1LJg7wHA42o2uAO/9VzHYK0leAVnCQE/FdMB599YMH73ux+nS0xGr79pv/BK+hrmdRin3iLgQjg==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-loong64/0.16.12:
+    resolution: {integrity: sha512-xTGzVPqm6WKfCC0iuj1fryIWr1NWEM8DMhAIo+4rFgUtwy/lfHl+Obvus4oddzRDbBetLLmojfVZGmt/g/g+Rw==}
+    engines: {node: '>=12'}
+    cpu: [loong64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-mips64el/0.16.12:
+    resolution: {integrity: sha512-zI1cNgHa3Gol+vPYjIYHzKhU6qMyOQrvZ82REr5Fv7rlh5PG6SkkuCoH7IryPqR+BK2c/7oISGsvPJPGnO2bHQ==}
+    engines: {node: '>=12'}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-ppc64/0.16.12:
+    resolution: {integrity: sha512-/C8OFXExoMmvTDIOAM54AhtmmuDHKoedUd0Otpfw3+AuuVGemA1nQK99oN909uZbLEU6Bi+7JheFMG3xGfZluQ==}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-riscv64/0.16.12:
+    resolution: {integrity: sha512-qeouyyc8kAGV6Ni6Isz8hUsKMr00EHgVwUKWNp1r4l88fHEoNTDB8mmestvykW6MrstoGI7g2EAsgr0nxmuGYg==}
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-s390x/0.16.12:
+    resolution: {integrity: sha512-s9AyI/5vz1U4NNqnacEGFElqwnHusWa81pskAf8JNDM2eb6b2E6PpBmT8RzeZv6/TxE6/TADn2g9bb0jOUmXwQ==}
+    engines: {node: '>=12'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-x64/0.16.12:
+    resolution: {integrity: sha512-e8YA7GQGLWhvakBecLptUiKxOk4E/EPtSckS1i0MGYctW8ouvNUoh7xnU15PGO2jz7BYl8q1R6g0gE5HFtzpqQ==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/netbsd-x64/0.16.12:
+    resolution: {integrity: sha512-z2+kUxmOqBS+6SRVd57iOLIHE8oGOoEnGVAmwjm2aENSP35HPS+5cK+FL1l+rhrsJOFIPrNHqDUNechpuG96Sg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/openbsd-x64/0.16.12:
+    resolution: {integrity: sha512-PAonw4LqIybwn2/vJujhbg1N9W2W8lw9RtXIvvZoyzoA/4rA4CpiuahVbASmQohiytRsixbNoIOUSjRygKXpyA==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/sunos-x64/0.16.12:
+    resolution: {integrity: sha512-+wr1tkt1RERi+Zi/iQtkzmMH4nS8+7UIRxjcyRz7lur84wCkAITT50Olq/HiT4JN2X2bjtlOV6vt7ptW5Gw60Q==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-arm64/0.16.12:
+    resolution: {integrity: sha512-XEjeUSHmjsAOJk8+pXJu9pFY2O5KKQbHXZWQylJzQuIBeiGrpMeq9sTVrHefHxMOyxUgoKQTcaTS+VK/K5SviA==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-ia32/0.16.12:
+    resolution: {integrity: sha512-eRKPM7e0IecUAUYr2alW7JGDejrFJXmpjt4MlfonmQ5Rz9HWpKFGCjuuIRgKO7W9C/CWVFXdJ2GjddsBXqQI4A==}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-x64/0.16.12:
+    resolution: {integrity: sha512-iPYKN78t3op2+erv2frW568j1q0RpqX6JOLZ7oPPaAV1VaF7dDstOrNw37PVOYoTWE11pV4A1XUitpdEFNIsPg==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@remix-run/router/1.2.1:
+    resolution: {integrity: sha512-XiY0IsyHR+DXYS5vBxpoBe/8veTeoRpMHP+vDosLZxL5bnpetzI0igkxkLZS235ldLzyfkxF+2divEwWHP3vMQ==}
+    engines: {node: '>=14'}
+    dev: false
+
+  /@swc/core-darwin-arm64/1.3.24:
+    resolution: {integrity: sha512-rR+9UpWm+fGXcipsjCst2hIL1GYIbo0YTLhJZWdIpQD6KRHHJMFXiydMgQQkDj2Ml7HpqUVgxj6m4ZWYL8b0OA==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-darwin-x64/1.3.24:
+    resolution: {integrity: sha512-px+5vkGtgPH0m3FkkTBHynlRdS5rRz+lK+wiXIuBZFJSySWFl6RkKbvwkD+sf0MpazQlqwlv/rTOGJBw6oDffg==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm-gnueabihf/1.3.24:
+    resolution: {integrity: sha512-jLs8ZOdTV4UW4J12E143QJ4mOMONQtqgAnuhBbRuWFzQ3ny1dfoC3P1jNWAJ2Xi59XdxAIXn0PggPNH4Kh34kw==}
+    engines: {node: '>=10'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm64-gnu/1.3.24:
+    resolution: {integrity: sha512-A/v0h70BekrwGpp1DlzIFGcHQ3QQ2PexXcnnuIBZeMc9gNmHlcZmg3EcwAnaUDiokhNuSUFA/wV94yk1OqmSkw==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-arm64-musl/1.3.24:
+    resolution: {integrity: sha512-pbc9eArWPTiMrbpS/pJo0IiQNAKAQBcBIDjWBGP1tcw2iDXYLw4bruwz9kI/VjakbshWb8MoE4T5ClkeuULvSw==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-x64-gnu/1.3.24:
+    resolution: {integrity: sha512-pP5pOLlY1xd352qo7rTlpVPUI9/9VhOd4b3Lk+LzfZDq9bTL2NDlGfyrPiwa5DGHMSzrugH56K2J68eutkxYVA==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-linux-x64-musl/1.3.24:
+    resolution: {integrity: sha512-phNbP7zGp+Wcyxq1Qxlpe5KkxO7WLT2kVQUC7aDFGlVdCr+xdXsfH1MzheHtnr0kqTVQX1aiM8XXXHfFxR0oNA==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-arm64-msvc/1.3.24:
+    resolution: {integrity: sha512-qhbiJTWAOqyR+K9xnGmCkOWSz2EmWpDBstEJCEOTc6FZiEdbiTscDmqTcMbCKaTHGu8t+6erVA4t65/Eg6uWPA==}
+    engines: {node: '>=10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-ia32-msvc/1.3.24:
+    resolution: {integrity: sha512-JfghIlscE4Rz+Lc08lSoDh+R0cWxrISed5biogFfE6vZqhaDnw3E5Qshqw7O3pIaiq8L2u1nmzuyP581ZmpbRA==}
+    engines: {node: '>=10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core-win32-x64-msvc/1.3.24:
+    resolution: {integrity: sha512-3AmJRr0hwciwDBbzUNqaftvppzS8v9X/iv/Wl7YaVLBVpPfQvaZzfqLycvNMGLZb5vIKXR/u58txg3dRBGsJtw==}
+    engines: {node: '>=10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@swc/core/1.3.24:
+    resolution: {integrity: sha512-QMOTd0AgiUT3K1crxLRqd3gw0f3FC8hhH1vvlIlryvYqU4c+FJ/T2G4ZhMKLxQlZ/jX6Rhk0gKINZRBxy2GFyQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@swc/core-darwin-arm64': 1.3.24
+      '@swc/core-darwin-x64': 1.3.24
+      '@swc/core-linux-arm-gnueabihf': 1.3.24
+      '@swc/core-linux-arm64-gnu': 1.3.24
+      '@swc/core-linux-arm64-musl': 1.3.24
+      '@swc/core-linux-x64-gnu': 1.3.24
+      '@swc/core-linux-x64-musl': 1.3.24
+      '@swc/core-win32-arm64-msvc': 1.3.24
+      '@swc/core-win32-ia32-msvc': 1.3.24
+      '@swc/core-win32-x64-msvc': 1.3.24
+    dev: true
+
+  /@tweenjs/tween.js/18.6.4:
+    resolution: {integrity: sha512-lB9lMjuqjtuJrx7/kOkqQBtllspPIN+96OvTCeJ2j5FEzinoAXTdAMFnDAQT1KVPRlnYfBrqxtqP66vDM40xxQ==}
+    dev: false
+
+  /@types/js-cookie/2.2.7:
+    resolution: {integrity: sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==}
+    dev: false
+
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+    dev: false
+
+  /@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/react-dom/18.0.10:
+    resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
+    dependencies:
+      '@types/react': 18.0.26
+    dev: true
+
+  /@types/react/18.0.26:
+    resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: true
+
+  /@types/three/0.147.0:
+    resolution: {integrity: sha512-IW1P10dhUym3B6wamVqohCYS/BqzT4XYNhRCI8NLfm6mXPrgfm70G6d2E15OdbBmXNdd5yewYWtL/+aClljNvA==}
+    dependencies:
+      '@types/webxr': 0.5.0
+    dev: true
+
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
+    dev: false
+
+  /@types/webxr/0.5.0:
+    resolution: {integrity: sha512-IUMDPSXnYIbEO2IereEFcgcqfDREOgmbGqtrMpVPpACTU6pltYLwHgVkrnYv0XhWEcjio9sYEfIEzgn3c7nDqA==}
+    dev: true
+
+  /@vis-three/animate-script-library/0.5.1:
+    resolution: {integrity: sha512-2oV5E7qkLohUn3ydVvkcVuOjpvaOCbE6YdXe27VIniLQ5bIE21UgRn20Ndaeyj8njsSQNfHEvBx3pOl4RhwANg==}
+    dependencies:
+      '@vis-three/middleware': 0.5.7
+    dev: false
+
+  /@vis-three/axes-helper-plugin/0.5.2:
+    resolution: {integrity: sha512-7nkQNoqCpkIb/Nb1nJF0fizMnTTLcRSr2ZixhX7ZUDGPmB+l3MvhimYqJxPixH8v7mVNo6FbxjuFMkGv7hKZGg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/camera-adaptive-plugin/0.5.0:
+    resolution: {integrity: sha512-ur8vmWCwUukIkhoJwJkzHH+Q/5GxqRR5a+NoYl6SGRrs2eoOQVis/+TOn4QoJ1BAeO6oumXYF5b2OyQgwxez4w==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+    dev: false
+
+  /@vis-three/composer-support-strategy/0.5.2:
+    resolution: {integrity: sha512-f6mVxhv5pXRZRqcc15Xs9NVlqMhVm+kAdmnwLkWo/vnrjLgSD6azzal/3wZUrKItT+A+aKkqFffcHkYg6ipMGA==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/effect-composer-plugin': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/convenient/0.5.1:
+    resolution: {integrity: sha512-7EmDrZMwdLp49eXBU6CIMuwsbCZtufaBSkWjUah3rTbvFqalyf9qFJ4f3gfP5cdLx4wWCw8NNfXXqvbmqNkscg==}
+    dev: false
+
+  /@vis-three/core/0.5.1:
+    resolution: {integrity: sha512-icJRnS3Zto5GOgvmEIKstpgwoULlN0nFY51mGWl39+OFhxV7hdE1RMQ7Zxi9PgO1az025C0oSYL4QGVBr1hAQA==}
+    engines: {node: '>=14.15.0'}
+    dependencies:
+      '@types/node': 18.11.18
+      '@types/uuid': 8.3.4
+      three: 0.141.0
+    dev: false
+
+  /@vis-three/css2d-render-strategy/0.5.1:
+    resolution: {integrity: sha512-7xKTZt4Rddu15nSgHRJV1GhkHUdg1MgDXYdWReIUN/UeglslTCI3HR3WQ/vZcfdwK/gcMDs1Op56SrQ+qcgx8w==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/css2d-renderer-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/css2d-renderer-plugin/0.5.1:
+    resolution: {integrity: sha512-+5s6jDcdxw0Aj+o+beqYYW8fiF/IkXA80eaAEnkVpYdaSuY3K7lM84uPLDj5YoGfM6TkMS6iR8J5fJzuOenRXQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/css3d-render-strategy/0.5.1:
+    resolution: {integrity: sha512-y3rbwCRYrIrFREjH4ov3gYoyCfTPqad+JuJadFrWqHkxWjQvAs0EsUtnH87zYlkoJLd11Hp76a9O+QgtrXekmw==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/css3d-renderer-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/css3d-renderer-plugin/0.5.1:
+    resolution: {integrity: sha512-w2IhZn6A1il/c6AB4s2rEFvlmqJOx3RJt9PTkHWdG4DD1+SeBHNGmjfUr8BpEjANeJdeSl+47EqUDOHVme4qDQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/css3d-renderer-support-strategy/0.5.1:
+    resolution: {integrity: sha512-ea4UFiR+qJh9Alu4xwoZqFTwVe9USkViZJNR6uTi2syh1WhTF+BPNgMkrlBhANeLoPRNLqLa3xNM6BmiqKEm2g==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/css3d-renderer-plugin': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/display-engine-support/0.5.3:
+    resolution: {integrity: sha512-6rOegg4MqQOxMLwdeADqDQabSHJMqcNtyl63SupNeGUJigIHQ2xUdSGTp2Eu0j74RMHXTbKFsTDjEW2GHJaD2g==}
+    dependencies:
+      '@vis-three/camera-adaptive-plugin': 0.5.0
+      '@vis-three/composer-support-strategy': 0.5.2
+      '@vis-three/css2d-render-strategy': 0.5.1
+      '@vis-three/css2d-renderer-plugin': 0.5.1
+      '@vis-three/css3d-render-strategy': 0.5.1
+      '@vis-three/css3d-renderer-plugin': 0.5.1
+      '@vis-three/css3d-renderer-support-strategy': 0.5.1
+      '@vis-three/effect-composer-plugin': 0.5.1
+      '@vis-three/effect-render-strategy': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/orbit-controls-support-strategy': 0.5.3
+      '@vis-three/orbit-render-strategy': 0.5.1
+      '@vis-three/webgl-renderer-plugin': 0.5.1
+      '@vis-three/webgl-renderer-support-strategy': 0.5.1
+    dev: false
+
+  /@vis-three/display-engine/0.5.1:
+    resolution: {integrity: sha512-2SvMI0MZ/fiDdaRTEopzxjoqwlWr8eFn4dEVQ4h3B0KGtQR0vo+wFFye27uGTyduQEk1uvkQV0z/NWlKBrp0jA==}
+    dependencies:
+      '@vis-three/camera-adaptive-plugin': 0.5.0
+      '@vis-three/core': 0.5.1
+      '@vis-three/css2d-render-strategy': 0.5.1
+      '@vis-three/css2d-renderer-plugin': 0.5.1
+      '@vis-three/css3d-render-strategy': 0.5.1
+      '@vis-three/css3d-renderer-plugin': 0.5.1
+      '@vis-three/effect-composer-plugin': 0.5.1
+      '@vis-three/effect-render-strategy': 0.5.1
+      '@vis-three/event-manager-plugin': 0.5.1
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/orbit-render-strategy': 0.5.1
+      '@vis-three/pointer-manager-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/webgl-renderer-plugin': 0.5.1
+    dev: false
+
+  /@vis-three/effect-composer-plugin/0.5.1:
+    resolution: {integrity: sha512-QTnHrNBs4JqCwYrkgpGBshfkzSG/9twPfIunCCjf+pSFvvAW6xcZeqMw+9lnLWWiuFACZZ3KH0S2SPmvwhJtBw==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+      '@vis-three/webgl-renderer-plugin': 0.5.1
+    dev: false
+
+  /@vis-three/effect-render-strategy/0.5.1:
+    resolution: {integrity: sha512-zzLocTdSuWNN55zoXCSXJpNrgUwFuKQtn01L21K8Zg2p40kcvLGrGpkJex7nTMdZ+kwmsVmnKuwABa2yGb2rHA==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/effect-composer-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/event-library/0.5.2:
+    resolution: {integrity: sha512-TXMOP/BqxaKdcQ29qZ8PWqpvm/3J7q3WKjcb/o7eNlfbRTpiqhotAw8rb8qvsbjUXfFoK4hyPAxaekCQwnfDHw==}
+    dependencies:
+      '@tweenjs/tween.js': 18.6.4
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/orbit-controls-plugin': 0.5.1
+    dev: false
+
+  /@vis-three/event-manager-plugin/0.5.1:
+    resolution: {integrity: sha512-3wBJrC3yYdu1pXoeIMuJz4+cvc+nbWtLrhXy+hpAVJuof3Z5Rr7wf/MaI64LbvJsbLlsr0m5ErgVJxw1+5/IFw==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/pointer-manager-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/grid-helper-plugin/0.5.0:
+    resolution: {integrity: sha512-n3jyafxko+X4HRlHT5XCPkI5MsHKhQdXy53qsw0/fZvNL5vtnt3arxtFbM5MxgR9N0sGcmRl7OekOrFXs+DJkw==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/grid-viewpoint-strategy/0.5.1:
+    resolution: {integrity: sha512-YtlxVlPqtYlEpTfojVF0C0EKd4VWZP+3sSAa/jfCPcnfH/tjSQYFUYp9dSIGzX92GLnekr58uCUvt6yizckdlQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/grid-helper-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+      '@vis-three/viewpoint-plugin': 0.5.1
+    dev: false
+
+  /@vis-three/helper-select-interact-strategy/0.5.1:
+    resolution: {integrity: sha512-Fy6AD/AtH36oCZWpmSt/T8XhpP6BGzVHTZf3hEbpXFfnM2ZcA/Trj7mE+dg4n8TdChWPT13qqqaijC0vlkVcGg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/event-manager-plugin': 0.5.1
+      '@vis-three/object-helper-plugin': 0.5.0
+      '@vis-three/selection-plugin': 0.5.0
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/keyboard-manager-plugin/0.5.1:
+    resolution: {integrity: sha512-2cz2eo+HXhoItWiH7dafKhc15CDbrtXttu6nTKMHLEz3zdx0JmW/En4elm6TAsllM6wDyI9KYZ3Cfg8Mruj6Zw==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+      keyboardjs: 2.7.0
+    dev: false
+
+  /@vis-three/loader-manager-plugin/0.5.2:
+    resolution: {integrity: sha512-kVyhwr3PV4t0GsKZ2zo7sRmwm1lMdDTb/YVr68d8mkXEvQR2+Kv+ro4DJwHRquEHYWdLDAitoPEcBwCIQ1bdGw==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/middleware/0.5.7:
+    resolution: {integrity: sha512-zTGu3hao8zcQ86z+8tQ9TOzCFDpCt84/wmYJu3OpD134Rx9s7cYeVq5bJvgKiUqAHL90uBQaGis8C2TRbAMAVQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/event-manager-plugin': 0.5.1
+      '@vis-three/loader-manager-plugin': 0.5.2
+      '@vis-three/pointer-manager-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+      rxjs: 7.8.0
+      uuid: 8.3.2
+    dev: false
+
+  /@vis-three/modeling-engine-support/0.5.3:
+    resolution: {integrity: sha512-MpHDy0jeu7yiTtihZKzWkRS0SCSbIoS9J9QVKdgrkmgmuGEgVqZEIzK502XYN29TaherU0IPw1KPrdXEvuQDKw==}
+    dependencies:
+      '@vis-three/axes-helper-plugin': 0.5.2
+      '@vis-three/camera-adaptive-plugin': 0.5.0
+      '@vis-three/composer-support-strategy': 0.5.2
+      '@vis-three/css2d-render-strategy': 0.5.1
+      '@vis-three/css2d-renderer-plugin': 0.5.1
+      '@vis-three/css3d-render-strategy': 0.5.1
+      '@vis-three/css3d-renderer-plugin': 0.5.1
+      '@vis-three/css3d-renderer-support-strategy': 0.5.1
+      '@vis-three/effect-composer-plugin': 0.5.1
+      '@vis-three/effect-render-strategy': 0.5.1
+      '@vis-three/grid-helper-plugin': 0.5.0
+      '@vis-three/grid-viewpoint-strategy': 0.5.1
+      '@vis-three/helper-select-interact-strategy': 0.5.1
+      '@vis-three/keyboard-manager-plugin': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/object-helper-plugin': 0.5.0
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/orbit-controls-support-strategy': 0.5.3
+      '@vis-three/orbit-render-strategy': 0.5.1
+      '@vis-three/orbit-viewpoint-strategy': 0.5.1
+      '@vis-three/selection-plugin': 0.5.0
+      '@vis-three/stats-plugin': 0.5.0
+      '@vis-three/stats-render-strategy': 0.5.1
+      '@vis-three/trans-select-event-strategy': 0.5.1
+      '@vis-three/transform-controls-helper-filter-strategy': 0.5.2
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/transform-controls-support-strategy': 0.5.1
+      '@vis-three/transform-keyboard-strategy': 0.5.1
+      '@vis-three/viewpoint-plugin': 0.5.1
+      '@vis-three/webgl-renderer-plugin': 0.5.1
+      '@vis-three/webgl-renderer-support-strategy': 0.5.1
+    dev: false
+
+  /@vis-three/modeling-engine/0.5.1:
+    resolution: {integrity: sha512-Dw61SKW2UBbSK0b2jq83TpWaAxsOpMixBGR6SRSZFpdRGRw0Y2oHdjCfsouzbF31GGcRF//CxDvN3UlfJhD66A==}
+    dependencies:
+      '@vis-three/axes-helper-plugin': 0.5.2
+      '@vis-three/camera-adaptive-plugin': 0.5.0
+      '@vis-three/core': 0.5.1
+      '@vis-three/css2d-render-strategy': 0.5.1
+      '@vis-three/css2d-renderer-plugin': 0.5.1
+      '@vis-three/css3d-render-strategy': 0.5.1
+      '@vis-three/css3d-renderer-plugin': 0.5.1
+      '@vis-three/effect-composer-plugin': 0.5.1
+      '@vis-three/effect-render-strategy': 0.5.1
+      '@vis-three/event-manager-plugin': 0.5.1
+      '@vis-three/grid-helper-plugin': 0.5.0
+      '@vis-three/grid-viewpoint-strategy': 0.5.1
+      '@vis-three/helper-select-interact-strategy': 0.5.1
+      '@vis-three/keyboard-manager-plugin': 0.5.1
+      '@vis-three/object-helper-plugin': 0.5.0
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/orbit-render-strategy': 0.5.1
+      '@vis-three/orbit-viewpoint-strategy': 0.5.1
+      '@vis-three/pointer-manager-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/selection-plugin': 0.5.0
+      '@vis-three/stats-plugin': 0.5.0
+      '@vis-three/stats-render-strategy': 0.5.1
+      '@vis-three/trans-select-event-strategy': 0.5.1
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/transform-keyboard-strategy': 0.5.1
+      '@vis-three/viewpoint-plugin': 0.5.1
+      '@vis-three/webgl-renderer-plugin': 0.5.1
+    dev: false
+
+  /@vis-three/object-helper-plugin/0.5.0:
+    resolution: {integrity: sha512-t8NFtqFodVzxrzsAtZmxeQbTidJ4QSk2+ssmMP3iXkI0yWE2+mUPjeOCrXOym9CrFFzOOBOgjRgfqccyNDMgww==}
+    dependencies:
+      '@vis-three/convenient': 0.5.1
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/orbit-controls-plugin/0.5.1:
+    resolution: {integrity: sha512-n4NILWUS08X8/Lo7S2d4w5e23FpoNt8mjk3bhcQcvS95IUjTMkWHtBdE0NWp+fx41wKtc0k8D6EwaK4AyzzJfQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/orbit-controls-support-strategy/0.5.3:
+    resolution: {integrity: sha512-YyFSOJEr8YaNtc/phaSumhbKSxhU6ortNkud6YrwQ8Q1p/MdaVOUbKj20zK5yahzECYtg4v20XBcZ/TasM3+pg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/orbit-render-strategy/0.5.1:
+    resolution: {integrity: sha512-pBRXWxtA+1M/Kp+9pu789QLGDLH27Nh0rqpJLV9aIA0l3fnZx9z/pmsso64XwPpVSwpWinQ98OZM2TxBcVmljg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/orbit-viewpoint-strategy/0.5.1:
+    resolution: {integrity: sha512-sX2e2BqZPAI89HjsuxznSfUc2+9m69caQYbFU4GprKV5EQzFp80TPfY+KCDJ8VXsBTmgP8U0YSnJpl7og6jPVg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/orbit-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+      '@vis-three/viewpoint-plugin': 0.5.1
+    dev: false
+
+  /@vis-three/pointer-manager-plugin/0.5.1:
+    resolution: {integrity: sha512-I/MTaVrQpjRGXpUL7Hko+xWJT4qJnPX7P3C9qcs/H0DDZXDG1OJgK1N/NWjYokyLAU+21c1k6BUZi93NmAnMPQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+    dev: false
+
+  /@vis-three/render-manager-plugin/0.5.0:
+    resolution: {integrity: sha512-3k4ibaD4l6s9CmkKl4631Ac94K68sRq2NKkmetYJerXHt7sNXCnzH1ZCZ+g4019C4GG8jpcbtTf9kKlUzBIFkQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/selection-plugin/0.5.0:
+    resolution: {integrity: sha512-Ha+XqpKTMmAvZNwCPbtrdt2ykSjKLFcGpESIp3bZl2nn4VE4fVpnQwV1RfgAmg4njP09NRlEPAaoijmtihquzg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/shader-library/0.5.5:
+    resolution: {integrity: sha512-hfX7Kl0dfr8zYJbyo490PYpxSbiL6pcx3K4azgJbiaPN6fPir8moYLgKksRfyC14QQCDl0SPY7e5TBvuT/Jn9w==}
+    dependencies:
+      '@vis-three/middleware': 0.5.7
+    dev: false
+
+  /@vis-three/stats-plugin/0.5.0:
+    resolution: {integrity: sha512-8BDnSXQ4T4qWUNgay0aG7GGPyNoh3+o+XvF/thZBNcrdcx/vPjrk5hwrtgKZhNqBGOmJee95Iv51E5USkCXC6g==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/stats-render-strategy/0.5.1:
+    resolution: {integrity: sha512-SxT9oxkSCdi2NlIA43jzZ1WkkXrW/li17DRhUY7Y6RklkDrRR2/kBu3ilKlsq7hARjQHWrfJot84/vO1cEtB2g==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/render-manager-plugin': 0.5.0
+      '@vis-three/stats-plugin': 0.5.0
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/trans-select-event-strategy/0.5.1:
+    resolution: {integrity: sha512-YG+WGn+lJgmF1IRkGNlEEnklU7ZGGy178ypfENd6LiKYA1h7f1HYpN7DgIxdro9Uo0K/zpQY1C+VsGuWdaWL+w==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/event-manager-plugin': 0.5.1
+      '@vis-three/selection-plugin': 0.5.0
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/transform-controls-helper-filter-strategy/0.5.2:
+    resolution: {integrity: sha512-LYHhHZ1bQcN+8NIVfbDC82TkZC74M4r/bV9Y6iR3pfayhAbhY0Tzf5DehylwKMCi2Ubp1Mdf9hzDzFNr0vVL+w==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/object-helper-plugin': 0.5.0
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/transform-controls-plugin/0.5.1:
+    resolution: {integrity: sha512-KcdGZkx2FWRET1wKabhw9F0jAzJMv8P9GtGik4Pb1PsNbGGIbN7pX2VGVTEqpk3KEl2gFoHMPzkB0R93bWOGtg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/transform-controls-support-strategy/0.5.1:
+    resolution: {integrity: sha512-oHIim3/uhjgkA4svSmqYxJ1QHa8jUaZ9DKzXwUx6QePJIgMFEh0Apul18WsTqjcQQJg3ooLD2MYXuvQo1Om1zg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/transform-keyboard-strategy/0.5.1:
+    resolution: {integrity: sha512-tlcFv7SmcRH+LKjjBZaWWd12n473MvtWbg7TmkOmNJ6yYzU3AHPyXU5WyCZ6Q+qyposbXxa0fX8/4JTFPfAaEQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/keyboard-manager-plugin': 0.5.1
+      '@vis-three/transform-controls-plugin': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/utils/0.5.0:
+    resolution: {integrity: sha512-A35hVqYWM68cNcIuB0RhnWJ0zv2csEWZoRiCeS1c11Nfe9ooLoRT3K7N89/2XNMzcWS2aHEqWumgmzIiA86jSw==}
+    dev: false
+
+  /@vis-three/viewpoint-plugin/0.5.1:
+    resolution: {integrity: sha512-joiMYlb1yp7FT4mrJiBB6YNBdieLggGgdWAAnAq53M9ORzssNgUEi0ktvV7nlnUnwVngMkAkBD2vEjLEZSWRwQ==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/webgl-renderer-plugin/0.5.1:
+    resolution: {integrity: sha512-OaNVFxxhVzHwB4vu/qFEwGe5W6/Yo+kLE+yK+eI4Sn8rTrzP5a9pxQGVcfVKwFuGq5EwZEwg67xJxfQiXQQqJg==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /@vis-three/webgl-renderer-support-strategy/0.5.1:
+    resolution: {integrity: sha512-eEom+GMWNoIb/wUnFuofVHmMpU9jRpWNY3rW9l3WyntVl8SiAMKGqGbkLZmX/5wBDmhVzm/YKfz1x0DBzBh+tA==}
+    dependencies:
+      '@vis-three/core': 0.5.1
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/utils': 0.5.0
+      '@vis-three/webgl-renderer-plugin': 0.5.1
+    dev: false
+
+  /@vitejs/plugin-react-swc/3.0.1_vite@4.0.3:
+    resolution: {integrity: sha512-3GQ2oruZO9j8dSHcI0MUeOZQBhjYyDQsF/pKY4Px+CJxn0M16OhgFeEzUjeuwci4zhhjoNIDE9aFNaV5GMQ09g==}
+    peerDependencies:
+      vite: ^4
+    dependencies:
+      '@swc/core': 1.3.24
+      vite: 4.0.3_less@4.1.3
+    dev: true
+
+  /ahooks-v3-count/1.0.0:
+    resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
+    dev: false
+
+  /ahooks/3.7.4_react@18.2.0:
+    resolution: {integrity: sha512-hvgdqzPUKXn95mK3cGlDCi/ZZqv+FRibCUCFT8zW3hCwLGvixVfnHrIW2/2lgzPdLo8mLjp/XOdIJvcPvE2lgQ==}
+    engines: {node: '>=8.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@types/js-cookie': 2.2.7
+      ahooks-v3-count: 1.0.0
+      dayjs: 1.11.7
+      intersection-observer: 0.12.2
+      js-cookie: 2.2.1
+      lodash: 4.17.21
+      react: 18.2.0
+      resize-observer-polyfill: 1.5.1
+      screenfull: 5.2.0
+      tslib: 2.4.1
+    dev: false
+
+  /copy-anything/2.0.6:
+    resolution: {integrity: sha512-1j20GZTsvKNkc4BY3NpMOM8tt///wY3FpIzozTOFO2ffuZcV61nojHXVKIy3WM+7ADCy5FVhdZYHYDdgTU0yJw==}
+    dependencies:
+      is-what: 3.14.1
+    dev: true
+
+  /csstype/3.1.1:
+    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+    dev: true
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
+
+  /debug/3.2.7:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.3
+    dev: true
+    optional: true
+
+  /errno/0.1.8:
+    resolution: {integrity: sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      prr: 1.0.1
+    dev: true
+    optional: true
+
+  /esbuild/0.16.12:
+    resolution: {integrity: sha512-eq5KcuXajf2OmivCl4e89AD3j8fbV+UTE9vczEzq5haA07U9oOTzBWlh3+6ZdjJR7Rz2QfWZ2uxZyhZxBgJ4+g==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@esbuild/android-arm': 0.16.12
+      '@esbuild/android-arm64': 0.16.12
+      '@esbuild/android-x64': 0.16.12
+      '@esbuild/darwin-arm64': 0.16.12
+      '@esbuild/darwin-x64': 0.16.12
+      '@esbuild/freebsd-arm64': 0.16.12
+      '@esbuild/freebsd-x64': 0.16.12
+      '@esbuild/linux-arm': 0.16.12
+      '@esbuild/linux-arm64': 0.16.12
+      '@esbuild/linux-ia32': 0.16.12
+      '@esbuild/linux-loong64': 0.16.12
+      '@esbuild/linux-mips64el': 0.16.12
+      '@esbuild/linux-ppc64': 0.16.12
+      '@esbuild/linux-riscv64': 0.16.12
+      '@esbuild/linux-s390x': 0.16.12
+      '@esbuild/linux-x64': 0.16.12
+      '@esbuild/netbsd-x64': 0.16.12
+      '@esbuild/openbsd-x64': 0.16.12
+      '@esbuild/sunos-x64': 0.16.12
+      '@esbuild/win32-arm64': 0.16.12
+      '@esbuild/win32-ia32': 0.16.12
+      '@esbuild/win32-x64': 0.16.12
+    dev: true
+
+  /fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /function-bind/1.1.1:
+    resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
+    dev: true
+
+  /graceful-fs/4.2.10:
+    resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /has/1.0.3:
+    resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
+    engines: {node: '>= 0.4.0'}
+    dependencies:
+      function-bind: 1.1.1
+    dev: true
+
+  /iconv-lite/0.6.3:
+    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: 2.1.2
+    dev: true
+    optional: true
+
+  /image-size/0.5.5:
+    resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /intersection-observer/0.12.2:
+    resolution: {integrity: sha512-7m1vEcPCxXYI8HqnL8CKI6siDyD+eIWSwgB3DZA+ZTogxk9I4CDnj4wilt9x/+/QbHI4YG5YZNmC6458/e9Ktg==}
+    dev: false
+
+  /is-core-module/2.11.0:
+    resolution: {integrity: sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==}
+    dependencies:
+      has: 1.0.3
+    dev: true
+
+  /is-what/3.14.1:
+    resolution: {integrity: sha512-sNxgpk9793nzSs7bA6JQJGeIuRBQhAaNGG77kzYQgMkrID+lS6SlK07K5LaptscDlSaIgH+GPFzf+d75FVxozA==}
+    dev: true
+
+  /js-cookie/2.2.1:
+    resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
+    dev: false
+
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /keyboardjs/2.7.0:
+    resolution: {integrity: sha512-3tiQuAoLM1M5Xyo/eQVaqsq9joByTRkB0Byga+0S7BYJvY4HIlfW0SofOj4a20YSAFjv0SIFU/lw+Qjp6KYHPA==}
+    dev: false
+
+  /less/4.1.3:
+    resolution: {integrity: sha512-w16Xk/Ta9Hhyei0Gpz9m7VS8F28nieJaL/VyShID7cYvP6IL5oHeL6p4TXSDJqZE/lNv0oJ2pGVjJsRkfwm5FA==}
+    engines: {node: '>=6'}
+    hasBin: true
+    dependencies:
+      copy-anything: 2.0.6
+      parse-node-version: 1.0.1
+      tslib: 2.4.1
+    optionalDependencies:
+      errno: 0.1.8
+      graceful-fs: 4.2.10
+      image-size: 0.5.5
+      make-dir: 2.1.0
+      mime: 1.6.0
+      needle: 3.2.0
+      source-map: 0.6.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
+  /make-dir/2.1.0:
+    resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      pify: 4.0.1
+      semver: 5.7.1
+    dev: true
+    optional: true
+
+  /mime/1.6.0:
+    resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
+    engines: {node: '>=4'}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /ms/2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+    dev: true
+    optional: true
+
+  /nanoid/3.3.4:
+    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
+  /needle/3.2.0:
+    resolution: {integrity: sha512-oUvzXnyLiVyVGoianLijF9O/RecZUf7TkBfimjGrLM4eQhXyeJwM6GeAWccwfQ9aa4gMCZKqhAOuLaMIcQxajQ==}
+    engines: {node: '>= 4.4.x'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      debug: 3.2.7
+      iconv-lite: 0.6.3
+      sax: 1.2.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+    optional: true
+
+  /parse-node-version/1.0.1:
+    resolution: {integrity: sha512-3YHlOa/JgH6Mnpr05jP9eDG254US9ek25LyIxZlDItp2iJtwyaXQb57lBYLdT3MowkUFYEV2XXNAYIPlESvJlA==}
+    engines: {node: '>= 0.10'}
+    dev: true
+
+  /path-parse/1.0.7:
+    resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
+    dev: true
+
+  /picocolors/1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: true
+
+  /pify/4.0.1:
+    resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
+    engines: {node: '>=6'}
+    dev: true
+    optional: true
+
+  /postcss/8.4.20:
+    resolution: {integrity: sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
+  /prr/1.0.1:
+    resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    dev: true
+    optional: true
+
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: false
+
+  /react-router-dom/6.6.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-u+8BKUtelStKbZD5UcY0NY90WOzktrkJJhyhNg7L0APn9t1qJNLowzrM9CHdpB6+rcPt6qQrlkIXsTvhuXP68g==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.2.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router: 6.6.1_react@18.2.0
+    dev: false
+
+  /react-router/6.6.1_react@18.2.0:
+    resolution: {integrity: sha512-YkvlYRusnI/IN0kDtosUCgxqHeulN5je+ew8W+iA1VvFhf86kA+JEI/X/8NqYcr11hCDDp906S+SGMpBheNeYQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.2.1
+      react: 18.2.0
+    dev: false
+
+  /react/18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
+
+  /resize-observer-polyfill/1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
+    dev: false
+
+  /resolve/1.22.1:
+    resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.11.0
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+    dev: true
+
+  /rollup/3.9.0:
+    resolution: {integrity: sha512-nGGylpmblyjTpF4lEUPgmOw6OVxRvnI6Iuuh6Lz4O/X66cVOX1XJSsqP1YamxQ+mPuFE7qJxLFDSCk8rNv5dDw==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /rxjs/7.8.0:
+    resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
+    dependencies:
+      tslib: 2.4.1
+    dev: false
+
+  /safer-buffer/2.1.2:
+    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: true
+    optional: true
+
+  /sax/1.2.4:
+    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    dev: true
+    optional: true
+
+  /scheduler/0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
+
+  /screenfull/5.2.0:
+    resolution: {integrity: sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /semver/5.7.1:
+    resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
+    hasBin: true
+    dev: true
+    optional: true
+
+  /source-map-js/1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
+    engines: {node: '>=0.10.0'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /supports-preserve-symlinks-flag/1.0.0:
+    resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
+    engines: {node: '>= 0.4'}
+    dev: true
+
+  /three/0.141.0:
+    resolution: {integrity: sha512-JaSDAPWuk4RTzG5BYRQm8YZbERUxTfTDVouWgHMisS2to4E5fotMS9F2zPFNOIJyEFTTQDDKPpsgZVThKU3pXA==}
+    dev: false
+
+  /tslib/2.4.1:
+    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+
+  /typescript/4.9.4:
+    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: false
+
+  /vis-three/0.5.3:
+    resolution: {integrity: sha512-UyS2w5yQ2bshPz5joUzEdAF78xdgL6ihMJOXzQcLapAGginDbjaRh6mGhjLcgqLipVF4UrHMdV3N1SVjvQjedA==}
+    engines: {node: '>=14.15.0'}
+    dependencies:
+      '@vis-three/animate-script-library': 0.5.1
+      '@vis-three/convenient': 0.5.1
+      '@vis-three/core': 0.5.1
+      '@vis-three/display-engine': 0.5.1
+      '@vis-three/display-engine-support': 0.5.3
+      '@vis-three/event-library': 0.5.2
+      '@vis-three/middleware': 0.5.7
+      '@vis-three/modeling-engine': 0.5.1
+      '@vis-three/modeling-engine-support': 0.5.3
+      '@vis-three/shader-library': 0.5.5
+      '@vis-three/utils': 0.5.0
+    dev: false
+
+  /vite/4.0.3_less@4.1.3:
+    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.16.12
+      less: 4.1.3
+      postcss: 8.4.20
+      resolve: 1.22.1
+      rollup: 3.9.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true

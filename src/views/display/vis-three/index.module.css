@@ -1,0 +1,13 @@
+.root{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.button{
+  position: absolute;
+  left: 50%;
+  top:8%;
+  margin: 0 auto;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
