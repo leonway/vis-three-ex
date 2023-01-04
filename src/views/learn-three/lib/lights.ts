@@ -1,8 +1,10 @@
-import { AmbientLight, Object3D } from "three";
+import { AmbientLight, Object3D, PointLight } from "three";
 
 
-const ambientLight:AmbientLight = new AmbientLight('rgb(255,255,255)',1)
+const ambientLight:AmbientLight = new AmbientLight('rgb(255,255,255)',0.3)
+const pointLight:PointLight = new PointLight('rgb(255,255,255)',0.7)
+pointLight.position.set(100,100,100)
 
 export const LightsList:Object3D[] = []
 
-LightsList.push(ambientLight)
+LightsList.push(pointLight)
