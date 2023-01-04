@@ -19,7 +19,7 @@ class Engine {
     renderer.setSize(dom.offsetWidth,dom.offsetHeight,true)
 
     const camera = new PerspectiveCamera(45,dom.offsetWidth/dom.offsetHeight,1,1000)
-    camera.position.set(20,20,20)
+    camera.position.set(100,100,100)
     camera.lookAt(new Vector3(0,0,0))
     camera.up = new Vector3(0,1,0)
    
@@ -27,13 +27,10 @@ class Engine {
 
     const scene = new Scene()
  
-    const ambientLight:AmbientLight = new AmbientLight('rgb(255,255,255)',1)
 
     const axeshelper:AxesHelper  = new AxesHelper(500)
     const gridHelper:GridHelper  = new GridHelper(500,20,'rgb(200,200,200)','rgb(100,100,100)')
 
-
-    scene.add(ambientLight)
     scene.add(axeshelper)
     scene.add(gridHelper)
 
