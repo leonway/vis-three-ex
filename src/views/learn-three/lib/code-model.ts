@@ -1,10 +1,10 @@
-import { BufferAttribute, BufferGeometry, Object3D ,MeshStandardMaterial, Mesh, Color} from "three";
-import { VertexNormalsHelper } from "three/examples/jsm/helpers/VertexNormalsHelper";
-import {pictureTexture} from './textures'
+import { BufferAttribute, BufferGeometry, Color, DoubleSide, Mesh, MeshStandardMaterial, Object3D } from "three";
+import { pictureTexture } from "./textures";
+import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelper'
 
-export const CodeModelList:Object3D[] = []
+export const CodeModelList: Object3D[] = []
 
-const size:number =10
+const size: number = 10
 
 const points: Float32Array = new Float32Array([
   -size, size, size,
@@ -16,27 +16,61 @@ const points: Float32Array = new Float32Array([
   size, -size, size,
   size, -size, -size,
   -size, -size, -size,
+
+  -size, size, size,
+  -size, size, -size,
+  -size, -size, -size,
+  -size, -size, size,
+
+  size, size, size,
+  size, size, -size,
+  size, -size, -size,
+  size, -size, size,
+
+  -size, size, size,
+  size, size, size,
+  size, -size, size,
+  -size, -size, size,
+  
+
+  -size, size, -size,
+  size, size, -size,
+  size, -size, -size,
+  -size, -size, -size,
+  
 ])
 
-const index: number[] = [
-  0, 1, 2,
-  2, 3, 0,
+const normals: Float32Array = new Float32Array([
+  0, 1, 0,
+  0, 1, 0,
+  0, 1, 0,
+  0, 1, 0,
 
-  0, 4, 5,
-  5, 1, 0,
+  0, -1, 0,
+  0, -1, 0,
+  0, -1, 0,
+  0, -1, 0,
 
-  1, 5, 6,
-  6, 2, 1,
+  -1, 0, 0,
+  -1, 0, 0,
+  -1, 0, 0,
+  -1, 0, 0,
 
-  2, 6, 7,
-  7, 3, 2,
+  1, 0, 0,
+  1, 0, 0,
+  1, 0, 0,
+  1, 0, 0,
 
-  0, 7, 4,
-  0, 3, 7,
+  0, 0, 1,
+  0, 0, 1,
+  0, 0, 1,
+  0, 0, 1,
 
-  4, 6, 5,
-  7, 6, 4
-]
+  0, 0, -1,
+  0, 0, -1,
+  0, 0, -1,
+  0, 0, -1,
+])
 
 const uv: Float32Array = new Float32Array([
   0, 0,
@@ -48,32 +82,69 @@ const uv: Float32Array = new Float32Array([
   1, 0,
   1, 1,
   0, 1,
+
+  0, 0,
+  1, 0,
+  1, 1,
+  0, 1,
+
+  0, 0,
+  1, 0,
+  1, 1,
+  0, 1,
+
+  0, 0,
+  1, 0,
+  1, 1,
+  0, 1,
+
+  0, 0,
+  1, 0,
+  1, 1,
+  0, 1,
 ])
 
-const geometry:BufferGeometry = new BufferGeometry()
+const index: number[] = [
+  0, 1, 2,
+  2, 3, 0,
 
-geometry.setAttribute('position',new BufferAttribute(points,3))
-geometry.setAttribute('normal',new BufferAttribute(points,3))
-geometry.setAttribute('uv',new BufferAttribute(uv,2))
+  4, 5, 6,
+  6, 7, 4,
+
+  8, 9, 10,
+  10, 11, 8,
+
+  12, 14, 13,
+  14, 12, 15,
+
+  16, 18, 17,
+  18, 16, 19,
+
+  20, 21, 22,
+  22, 23, 20
+]
+
+
+
+const geometry: BufferGeometry = new BufferGeometry()
+
+geometry.setAttribute('position', new BufferAttribute(points, 3))
+geometry.setAttribute('normal', new BufferAttribute(normals, 3))
+geometry.setAttribute('uv', new BufferAttribute(uv, 2))
 
 geometry.setIndex(index)
 
-const material:MeshStandardMaterial = new MeshStandardMaterial({
-  color:'white',
-  map:pictureTexture
+const material: MeshStandardMaterial = new MeshStandardMaterial({
+  color: 'white',
+  // map: pictureTexture
 })
 
-const codeBox:Mesh = new Mesh(
-  geometry,
-  material
-)
+const codeBox: Mesh = new Mesh(geometry, material)
 
-codeBox.position.y=10
-codeBox.rotation.z = Math.PI /180 *90
+codeBox.position.y = 10
 
-const boxNormalHelper = new VertexNormalsHelper(codeBox,10,new Color('blue').getHex())
+// codeBox.rotation.x = Math.PI / 180 * 90
 
-CodeModelList.push(
-  codeBox,
-  boxNormalHelper
-)
+const boxNormalHelper = new VertexNormalsHelper(codeBox, 10, new Color('blue').getHex())
+
+CodeModelList.push(codeBox, boxNormalHelper)

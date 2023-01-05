@@ -21,7 +21,7 @@ const box:Mesh = new Mesh(
   new BoxGeometry(20,20,20),
   new MeshStandardMaterial({
     color:'rgb(255,255,255x)',
-    map:pictureTexture
+    // map:pictureTexture
   })
 ) 
 box.position.y = 10
