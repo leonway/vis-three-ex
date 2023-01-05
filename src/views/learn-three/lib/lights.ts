@@ -21,7 +21,7 @@ export const LightsList:Object3D[] = []
 LightsList.push(
   // ambientLight,
   spotLight,
-  pointLight,
+  // pointLight,
   // directionalLight,
   // hemisphereLight
   )

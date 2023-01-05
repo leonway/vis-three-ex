@@ -1,4 +1,5 @@
- import { BoxGeometry, CylinderGeometry, Line, Mesh, MeshStandardMaterial, Object3D, Points, PointsMaterial, SphereGeometry } from "three";
+ import { BoxGeometry, CylinderGeometry, Line, Mesh, MeshStandardMaterial, Object3D, PlaneGeometry, Points, PointsMaterial, SphereGeometry } from "three";
+ import {pictureTexture} from './textures'
 
 export const BasicObjectList:Object3D[] = []
 
@@ -27,5 +28,17 @@ box.position.y = 10
 box.castShadow = true
 box.receiveShadow = true
 
+const plane:Mesh = new Mesh(
+  new PlaneGeometry(192,108),
+  new MeshStandardMaterial({
+    map:pictureTexture
+  })
+)
+plane.position.y=35
+plane.scale.set(0.3,0.3,0.3)
 
-BasicObjectList.push(stage,box)
+BasicObjectList.push(
+  stage,
+  box,
+  plane
+  )
