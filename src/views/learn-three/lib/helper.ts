@@ -13,9 +13,9 @@ const hemisphereLightHelper = new HemisphereLightHelper( hemisphereLight,5);
 export const HelperList:Object3D[] =[]
 
 HelperList.push(
-  axeshelper,
-  gridHelper,
-  // pointLightHelper,
+  // axeshelper,
+  // gridHelper,
+  pointLightHelper,
   spotLightHelper,
   // directionalLightHelper,
   // hemisphereLightHelper
