@@ -1,16 +1,16 @@
-import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
+import { MeshStandardMaterial, TextureLoader } from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import {frameColorTexture,frameDisplacementTexture,frameroughnessTexture} from './textures'
 
 const objLoader = new OBJLoader()
-const materialLoader = new MTLLoader()
+const gltfLoader = new GLTFLoader()
 
-export const framePromise = new Promise((res,rej)=>{
-  materialLoader.loadAsync('/custom-model/frame.mtl').then((mtl) => {
-    objLoader.setMaterials(mtl).loadAsync('/custom-model/frame.obj').then(obj=>{
-      res(obj)
-    }).catch(e=>rej(e))
-  }).catch((err) => {
-    rej(err)
-  });
+export const frameMaterial = new MeshStandardMaterial({
+  map:frameColorTexture,
+  roughnessMap:frameroughnessTexture,
+  bumpMap:frameDisplacementTexture
+})
 
-}) 
+// export const framePromise = objLoader.loadAsync('/custom-model/frame.obj')
+export const framePromise = gltfLoader.loadAsync('/custom-model/frame.glb')

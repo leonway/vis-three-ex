@@ -13,7 +13,7 @@ spotLight.castShadow = true
 export const hemisphereLight:HemisphereLight = new HemisphereLight('rgb(0,255,255)','rgb(255,0,255)',5)
 hemisphereLight.position.set(-20,10,0)
 
-export const pointLight:PointLight = new PointLight('rgb(255,255,255)',0.7,50,0.1)
+export const pointLight:PointLight = new PointLight('rgb(255,255,255)',1,50,0.1)
 pointLight.position.set(-20,50,-20)
 
 export const LightsList:Object3D[] = []
