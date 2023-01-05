@@ -6,8 +6,9 @@ export const directionalLight:DirectionalLight = new DirectionalLight('rgb(255,2
 directionalLight.lookAt(new Vector3(20,20,20))
 directionalLight.position.set(100,100,100)
 
-export const spotLight:SpotLight = new SpotLight('rgb(255,255,255)',1)
-spotLight.position.set( 20, 20, 20 );
+export const spotLight:SpotLight = new SpotLight('rgb(255,255,255)',1,200,Math.PI/180*30)
+spotLight.position.set( 50, 50, 50 ); 
+spotLight.castShadow = true
 
 export const hemisphereLight:HemisphereLight = new HemisphereLight('rgb(0,255,255)','rgb(255,0,255)',5)
 hemisphereLight.position.set(-20,10,0)
@@ -18,9 +19,9 @@ pointLight.position.set(60,20,-20)
 export const LightsList:Object3D[] = []
 
 LightsList.push(
-  ambientLight,
+  // ambientLight,
   spotLight,
-  pointLight,
-  directionalLight,
-  hemisphereLight
+  // pointLight,
+  // directionalLight,
+  // hemisphereLight
   )

@@ -17,6 +17,7 @@ class Engine {
 
     const renderer = new WebGLRenderer({antialias:true})
     renderer.setSize(dom.offsetWidth,dom.offsetHeight,true)
+    renderer.shadowMap.enabled=true
 
     const camera = new PerspectiveCamera(45,dom.offsetWidth/dom.offsetHeight,1,1000)
     camera.position.set(100,100,100)

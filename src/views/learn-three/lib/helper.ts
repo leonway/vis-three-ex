@@ -6,7 +6,7 @@ const gridHelper:GridHelper  = new GridHelper(500,20,'rgb(200,200,200)','rgb(100
 
 const pointLightHelper:PointLightHelper = new PointLightHelper(pointLight,pointLight.distance,pointLight.color)
 
-const spotLightHelper = new SpotLightHelper( spotLight );
+const spotLightHelper = new SpotLightHelper( spotLight ,spotLight.color);
 const directionalLightHelper = new DirectionalLightHelper( directionalLight,5 );
 const hemisphereLightHelper = new HemisphereLightHelper( hemisphereLight,5);
 
@@ -15,8 +15,8 @@ export const HelperList:Object3D[] =[]
 HelperList.push(
   axeshelper,
   gridHelper,
-  pointLightHelper,
+  // pointLightHelper,
   spotLightHelper,
-  directionalLightHelper,
-  hemisphereLightHelper
+  // directionalLightHelper,
+  // hemisphereLightHelper
   )
