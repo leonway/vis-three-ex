@@ -1,5 +1,6 @@
- import { BoxGeometry, CylinderGeometry, Line, Mesh, MeshStandardMaterial, Object3D, PlaneGeometry, Points, PointsMaterial, SphereGeometry } from "three";
+ import { BoxGeometry, Color, CylinderGeometry, Line, Mesh, MeshStandardMaterial, Object3D, PlaneGeometry, Points, PointsMaterial, SphereGeometry } from "three";
  import {pictureTexture} from './textures'
+ import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelper'
 
 export const BasicObjectList:Object3D[] = []
 
@@ -19,14 +20,16 @@ stage.castShadow = true
 const box:Mesh = new Mesh(
   new BoxGeometry(20,20,20),
   new MeshStandardMaterial({
-    color:'rgb(255,0,0)',
-    metalness:1,
-    roughness:0.3
+    color:'rgb(255,255,255x)',
+    map:pictureTexture
   })
 ) 
 box.position.y = 10
+box.position.x = 25
 box.castShadow = true
 box.receiveShadow = true
+
+const boxNormalHelper = new VertexNormalsHelper(box,10,new Color('blue').getHex())
 
 const plane:Mesh = new Mesh(
   new PlaneGeometry(192,108),
@@ -34,11 +37,12 @@ const plane:Mesh = new Mesh(
     map:pictureTexture
   })
 )
-plane.position.y=35
+plane.position.y=40
 plane.scale.set(0.3,0.3,0.3)
 
 BasicObjectList.push(
   stage,
   box,
-  plane
+  plane,
+  boxNormalHelper
   )
