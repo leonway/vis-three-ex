@@ -37,7 +37,8 @@ const plane:Mesh = new Mesh(
     map:pictureTexture
   })
 )
-plane.position.y=40
+plane.position.y=45
+plane.rotation.y= Math.PI/180*45
 plane.scale.set(0.3,0.3,0.3)
 
 BasicObjectList.push(

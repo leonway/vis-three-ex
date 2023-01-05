@@ -147,4 +147,7 @@ codeBox.position.y = 10
 
 const boxNormalHelper = new VertexNormalsHelper(codeBox, 10, new Color('blue').getHex())
 
-CodeModelList.push(codeBox, boxNormalHelper)
+CodeModelList.push(
+  // codeBox, 
+  // boxNormalHelper
+  )
