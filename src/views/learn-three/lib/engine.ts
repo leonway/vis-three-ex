@@ -1,5 +1,6 @@
-import {AmbientLight, AxesHelper, BoxGeometry, GridHelper, Mesh, MeshStandardMaterial, MOUSE, Object3D, PerspectiveCamera, Scene, Vector3, WebGLRenderer} from 'three'
+import {AmbientLight, AxesHelper, BoxGeometry, GridHelper, Mesh, MeshStandardMaterial, MOUSE, Object3D, PerspectiveCamera, Raycaster, Scene, Vector2, Vector3, WebGLRenderer} from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { TransformControls } from 'three/examples/jsm/controls/TransformControls'
 import Stats from 'three/examples/jsm/libs/stats.module'
 
 class Engine {
@@ -7,9 +8,11 @@ class Engine {
   private dom:HTMLDivElement
 
   private renderer:WebGLRenderer
+  private transformControls:TransformControls
   private scene:Scene
   private camera:PerspectiveCamera
   private orbitControls:OrbitControls
+  private raycaster:Raycaster
   /**
    *
    */
@@ -33,7 +36,6 @@ class Engine {
     statsDom.style.right = '5px'
     statsDom.style.left = 'unset'
   
-
     // this.renderer.setClearColor("rgb(255,255,255)")
     // this.renderer.clearColor()
 
@@ -48,6 +50,41 @@ class Engine {
       RIGHT:MOUSE.ROTATE
     }
 
+    // 变换控制器
+    const transformControls = new TransformControls(camera,renderer.domElement)
+    scene.add(transformControls)
+
+    // 射线发射器
+    const raycaster = new Raycaster()
+
+    // 给renderer 的canvas 对象添加鼠标事件
+    const mouse = new Vector2()
+    let x = 0;
+    let y = 0;
+    let width = 0;
+    let height = 0;
+    renderer.domElement.addEventListener('mousemove',(event)=>{
+      x = event.offsetX
+      y = event.offsetY
+      width = renderer.domElement.offsetWidth
+      height = renderer.domElement.offsetHeight
+      mouse.x = x / width * 2 - 1
+      mouse.y = -y * 2 / height + 1
+    })
+
+    renderer.domElement.addEventListener('click',(event)=>{
+      raycaster.setFromCamera(mouse,this.camera)
+      const intersection = raycaster.intersectObjects(scene.children)
+      if(intersection.length){
+        console.log('intersection',intersection);
+        const object = intersection[0].object
+        console.log('object',object);
+        
+        transformControls.attach(object)
+      }
+    })
+
+   
     const renderFunc = ()=>{
       orbitControls.update()
       renderer.render(scene,camera)
@@ -65,6 +102,7 @@ class Engine {
     this.scene = scene
     this.camera = camera
     this.orbitControls = orbitControls
+    this.transformControls = transformControls 
   }
 
   addObject(...object:Object3D[]){
