@@ -24,3 +24,4 @@ HelperList.push(
   // directionalLightHelper,
   // hemisphereLightHelper
   )
+  HelperList.forEach(v=>v.raycast=()=>{})

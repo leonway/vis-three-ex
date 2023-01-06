@@ -82,7 +82,7 @@ class Engine {
       }
       raycaster.setFromCamera(mouse,this.camera)
       scene.remove(transformControls)
-      const intersection = raycaster.intersectObjects(scene.children)
+      const intersection = raycaster.intersectObjects(scene.children,false)
       scene.add(transformControls)
       if(intersection.length){
         console.log('intersection',intersection);
