@@ -50,10 +50,13 @@ class Engine {
       RIGHT:MOUSE.ROTATE
     }
 
+    let transing = false
     // 变换控制器
     const transformControls = new TransformControls(camera,renderer.domElement)
     scene.add(transformControls)
-
+    transformControls.addEventListener('mouseUp',()=>{
+      transing=true
+    })
     // 射线发射器
     const raycaster = new Raycaster()
 
@@ -73,6 +76,10 @@ class Engine {
     })
 
     renderer.domElement.addEventListener('click',(event)=>{
+      if(transing){
+        transing = false
+        return false
+      }
       raycaster.setFromCamera(mouse,this.camera)
       const intersection = raycaster.intersectObjects(scene.children)
       if(intersection.length){
@@ -103,6 +110,7 @@ class Engine {
     this.camera = camera
     this.orbitControls = orbitControls
     this.transformControls = transformControls 
+    this.raycaster = raycaster
   }
 
   addObject(...object:Object3D[]){
