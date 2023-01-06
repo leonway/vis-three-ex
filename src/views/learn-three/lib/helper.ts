@@ -7,9 +7,9 @@ const gridHelper:GridHelper  = new GridHelper(500,20,'rgb(200,200,200)','rgb(100
 const pointLightHelper:PointLightHelper = new PointLightHelper(pointLight,pointLight.distance,pointLight.color)
 
 const spotLightHelper = new SpotLightHelper( spotLight ,spotLight.color);
-setTimeout(() => {
-  spotLightHelper.update()
-}, 1000);
+// setTimeout(() => {
+//   spotLightHelper.update()
+// }, 1000);
 
 const directionalLightHelper = new DirectionalLightHelper( directionalLight,5 );
 const hemisphereLightHelper = new HemisphereLightHelper( hemisphereLight,5);

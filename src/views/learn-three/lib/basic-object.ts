@@ -32,16 +32,17 @@ plane.scale.set(0.3,0.3,0.3)
 export const wall:Mesh = new Mesh(
   new BoxGeometry(600,100,5),
   new MeshStandardMaterial({
-    color:'green'
+    color:'green',
+    // roughness:0
   })  
 )
 wall.castShadow=true
 wall.receiveShadow = true
 wall.position.y=50
-wall.position.z=-300
+wall.position.z=-3 
 
-// wall.updateMatrix()
-// wall.updateMatrixWorld()
+wall.updateMatrix()
+wall.updateMatrixWorld()
 // wall.rotation.y=Math.PI/180*45
 
 BasicObjectList.push(
