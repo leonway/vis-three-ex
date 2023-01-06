@@ -57,6 +57,7 @@ class Engine {
     }
 
     let transing = false
+    let cacheObject:Object3D|null = null
     // 变换控制器
     const transformControls = new TransformControls(camera,renderer.domElement)
     scene.add(transformControls)
@@ -85,6 +86,39 @@ class Engine {
       height = renderer.domElement.offsetHeight
       mouse.x = x / width * 2 - 1
       mouse.y = -y * 2 / height + 1
+
+      raycaster.setFromCamera(mouse,this.camera)
+      scene.remove(transformControls)
+      const intersection = raycaster.intersectObjects(scene.children,false)
+      scene.add(transformControls)
+    
+      if(intersection.length){
+        scene.add(transformControls)
+
+        const object = intersection[0].object
+        if(cacheObject!==object){
+          if(cacheObject){
+            cacheObject.dispatchEvent({
+              type:'mouseleave'
+            })
+          }
+          object.dispatchEvent({
+            type:'mouseenter'
+          })
+        }else {
+          object.dispatchEvent({
+            type:'mousemove'
+          })
+        }
+        cacheObject = object
+      }else{
+        if(cacheObject){
+          cacheObject.dispatchEvent({
+            type:'mouseleave'
+          })
+        }
+        cacheObject = null
+      }
     })
 
     renderer.domElement.addEventListener('click',(event)=>{
@@ -95,14 +129,12 @@ class Engine {
       raycaster.setFromCamera(mouse,this.camera)
       scene.remove(transformControls)
       const intersection = raycaster.intersectObjects(scene.children,false)
-      scene.add(transformControls)
       if(intersection.length){
-        console.log('intersection',intersection);
         const object = intersection[0].object
-        console.log('object',object);
-        
+        scene.add(transformControls)
         transformControls.attach(object)
       }
+     
     })
 
    

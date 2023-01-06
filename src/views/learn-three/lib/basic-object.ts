@@ -1,4 +1,4 @@
- import { BoxGeometry, Color, CylinderGeometry, Line, Mesh, MeshStandardMaterial, Object3D, PlaneGeometry, Points, PointsMaterial, SphereGeometry } from "three";
+ import { BoxGeometry, Color, CylinderGeometry, Line, Material, Mesh, MeshStandardMaterial, Object3D, PlaneGeometry, Points, PointsMaterial, SphereGeometry } from "three";
  import {pictureTexture} from './textures'
  import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelper'
 
@@ -44,7 +44,17 @@ wall.position.z=-3
 wall.updateMatrix()
 wall.updateMatrixWorld()
 // wall.rotation.y=Math.PI/180*45
-
+wall.addEventListener('mouseenter',()=>{
+  console.log('wall mouseenter');
+ ( wall.material as MeshStandardMaterial).color = new Color('red')
+})
+// wall.addEventListener('mousemove',()=>{
+//   console.log('wall mousemove');
+// })
+wall.addEventListener('mouseleave',()=>{
+  console.log('wall mouseleave');
+  ( wall.material as MeshStandardMaterial).color = new Color('white')
+})
 BasicObjectList.push(
   stage,
   plane,
