@@ -3,6 +3,12 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { TransformControls } from 'three/examples/jsm/controls/TransformControls'
 import Stats from 'three/examples/jsm/libs/stats.module'
 
+const keyToModeMap:Record<string,'scale'|'rotate'|'translate'> = {
+  'e':'scale',
+  'r':'rotate',
+  't':'translate'
+}
+
 class Engine {
 
   private dom:HTMLDivElement
@@ -56,6 +62,12 @@ class Engine {
     scene.add(transformControls)
     transformControls.addEventListener('mouseUp',()=>{
       transing=true
+    })
+
+    document.addEventListener('keyup',e=>{
+      if(keyToModeMap[e?.key]){
+        transformControls.mode = keyToModeMap[e?.key]
+      }
     })
     // 射线发射器
     const raycaster = new Raycaster()
