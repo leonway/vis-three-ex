@@ -2,6 +2,7 @@ import {AmbientLight, AxesHelper, BoxGeometry, GridHelper, Mesh, MeshStandardMat
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { TransformControls } from 'three/examples/jsm/controls/TransformControls'
 import Stats from 'three/examples/jsm/libs/stats.module'
+import {EventManager} from './event-manager'
 
 const keyToModeMap:Record<string,'scale'|'rotate'|'translate'> = {
   'e':'scale',
@@ -18,7 +19,8 @@ class Engine {
   private scene:Scene
   private camera:PerspectiveCamera
   private orbitControls:OrbitControls
-  private raycaster:Raycaster
+  private eventManager:EventManager
+  
   /**
    *
    */
@@ -45,7 +47,6 @@ class Engine {
     // this.renderer.setClearColor("rgb(255,255,255)")
     // this.renderer.clearColor()
 
-
     const orbitControls:OrbitControls  = new OrbitControls(camera,renderer.domElement)
     // orbitControls.autoRotate = true
     // orbitControls.autoRotateSpeed = 0.3
@@ -56,12 +57,13 @@ class Engine {
       RIGHT:MOUSE.ROTATE
     }
 
-    let transing = false
-    let cacheObject:Object3D|null = null
     // 变换控制器
     const transformControls = new TransformControls(camera,renderer.domElement)
     scene.add(transformControls)
-    transformControls.addEventListener('mouseUp',()=>{
+   
+
+    let transing = false
+    transformControls.addEventListener('mouseDown',()=>{
       transing=true
     })
 
@@ -70,74 +72,63 @@ class Engine {
         transformControls.mode = keyToModeMap[e?.key]
       }
     })
-    // 射线发射器
-    const raycaster = new Raycaster()
 
-    // 给renderer 的canvas 对象添加鼠标事件
-    const mouse = new Vector2()
-    let x = 0;
-    let y = 0;
-    let width = 0;
-    let height = 0;
-    renderer.domElement.addEventListener('mousemove',(event)=>{
-      x = event.offsetX
-      y = event.offsetY
-      width = renderer.domElement.offsetWidth
-      height = renderer.domElement.offsetHeight
-      mouse.x = x / width * 2 - 1
-      mouse.y = -y * 2 / height + 1
 
-      raycaster.setFromCamera(mouse,this.camera)
-      scene.remove(transformControls)
-      const intersection = raycaster.intersectObjects(scene.children,false)
-      scene.add(transformControls)
-    
-      if(intersection.length){
-        scene.add(transformControls)
+    const eventManager = new EventManager({
+      dom:renderer.domElement,
+      scene,
+      camera
+    })
 
-        const object = intersection[0].object
-        if(cacheObject!==object){
-          if(cacheObject){
-            cacheObject.dispatchEvent({
-              type:'mouseleave'
-            })
-          }
-          object.dispatchEvent({
-            type:'mouseenter'
-          })
-        }else {
-          object.dispatchEvent({
-            type:'mousemove'
-          })
+    let cacheObject:Mesh|null = null;
+
+    eventManager.addEventListener('mousemove',(event)=>{
+      if (event.intersection.length) {
+        const object = event.intersection[0].object;
+
+        // 对比新老物体
+        if (object === cacheObject) {
+          return;
+        } else if (object !== cacheObject && cacheObject) {
+          (cacheObject.material as MeshStandardMaterial).color.multiplyScalar(
+            0.5
+          );
         }
-        cacheObject = object
-      }else{
-        if(cacheObject){
-          cacheObject.dispatchEvent({
-            type:'mouseleave'
-          })
+
+        if (object.material) {
+          object.material.color.multiplyScalar(2);
+          cacheObject = object;
         }
-        cacheObject = null
+      } else {
+        if (cacheObject) {
+          (cacheObject.material as MeshStandardMaterial).color.multiplyScalar(
+            0.5
+          );
+          cacheObject = null;
+        }
       }
     })
 
-    renderer.domElement.addEventListener('click',(event)=>{
-      if(transing){
-        transing = false
-        return false
+    renderer.domElement.addEventListener("click", (event) => {
+      // 拖动结束的操作
+      if (transing) {
+        transing = false;
+        return false;
       }
-      raycaster.setFromCamera(mouse,this.camera)
-      scene.remove(transformControls)
-      const intersection = raycaster.intersectObjects(scene.children,false)
-      if(intersection.length){
-        const object = intersection[0].object
-        scene.add(transformControls)
-        transformControls.attach(object)
-      }
-     
-    })
 
-   
+      // // 选取物体的操作
+      // raycaster.setFromCamera(mouse, this.camera)
+
+      // scene.remove(transformControls)
+      // const intersection = raycaster.intersectObjects(scene.children)
+
+      // if (intersection.length) {
+      //  const object = intersection[0].object
+      //  scene.add(transformControls)
+      //  transformControls.attach(object)
+      // }
+    });
+
     const renderFunc = ()=>{
       orbitControls.update()
       renderer.render(scene,camera)
@@ -156,7 +147,7 @@ class Engine {
     this.camera = camera
     this.orbitControls = orbitControls
     this.transformControls = transformControls 
-    this.raycaster = raycaster
+    this.eventManager = eventManager
   }
 
   addObject(...object:Object3D[]){
