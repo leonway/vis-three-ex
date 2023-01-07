@@ -1,4 +1,4 @@
-import {AmbientLight, AxesHelper, BoxGeometry, GridHelper, Mesh, MeshStandardMaterial, MOUSE, Object3D, PerspectiveCamera, Raycaster, Scene, Vector2, Vector3, WebGLRenderer} from 'three'
+import {AmbientLight, AxesHelper, BoxGeometry, GridHelper, Group, Mesh, MeshStandardMaterial, MOUSE, Object3D, PerspectiveCamera, Raycaster, Scene, Vector2, Vector3, WebGLRenderer} from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { TransformControls } from 'three/examples/jsm/controls/TransformControls'
 import Stats from 'three/examples/jsm/libs/stats.module'
@@ -124,7 +124,8 @@ class Engine {
         scene.remove(transformControls)
        }else{
         scene.add(transformControls)
-        transformControls.attach(object)
+        const target = object.parent instanceof Group ? object.parent:object
+        transformControls.attach(target)
        }
      
       }else{

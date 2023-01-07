@@ -4,9 +4,10 @@ import {BasicObjectList} from './lib/basic-object'
 import {LightsList} from './lib/lights'
 import {HelperList} from './lib/helper'
 import {CodeModelList} from './lib/code-model'
-import {framePromise,getFrame} from './lib/load-model'
+import {getFrame} from './lib/load-model'
 import s from './index.module.less'
 import { Material, Mesh } from 'three'
+import { getGroup } from './lib/group'
 
 interface LearnThreeProps {}
 
@@ -19,8 +20,8 @@ const LearnThree: React.FC<LearnThreeProps> = componentProps => {
       engine.addObject(...LightsList)
       engine.addObject(...HelperList)
       engine.addObject(...CodeModelList)
-      getFrame().then(frameMesh=>{
-        frameMesh&& engine.addObject(frameMesh)
+      getGroup().then(frameGroup=>{
+        engine.addObject(frameGroup)
       })
     }, [])
     

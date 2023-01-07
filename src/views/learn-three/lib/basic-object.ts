@@ -16,18 +16,6 @@ stage.position.y = -5
 stage.receiveShadow = true
 stage.castShadow = true
 
-const plane:Mesh = new Mesh(
-  new PlaneGeometry(192,108),
-  new MeshStandardMaterial({
-    map:pictureTexture
-  })
-)
-plane.receiveShadow = true
-plane.castShadow = true
-plane.position.y=45
-// plane.rotation.y= Math.PI/180*45
-plane.scale.set(0.3,0.3,0.3)
-
 // 墙面
 export const wall:Mesh = new Mesh(
   new BoxGeometry(600,100,5),
@@ -57,6 +45,5 @@ wall.addEventListener('mouseleave',()=>{
 })
 BasicObjectList.push(
   stage,
-  plane,
   wall
   )

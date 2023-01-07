@@ -21,7 +21,7 @@ export const getFrame = async ():Promise<Mesh|null>=>{
     frameMesh.material = frameMaterial
    
     // engine.addObject(frameMesh)
-    frameMesh.position.y=45
+    // frameMesh.position.y=45
     frameMesh.rotation.y= Math.PI/180*-90
     frameMesh.scale.set(2,2,2)
     return frameMesh
