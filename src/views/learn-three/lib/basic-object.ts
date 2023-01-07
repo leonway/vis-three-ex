@@ -44,7 +44,7 @@ wall.position.z=-3
 wall.updateMatrix()
 wall.updateMatrixWorld()
 // wall.rotation.y=Math.PI/180*45
-wall.addEventListener('mouseenter',()=>{
+wall.addEventListener('click',()=>{
   console.log('wall mouseenter');
  ( wall.material as MeshStandardMaterial).color = new Color('red')
 })

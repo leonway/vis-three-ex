@@ -31,7 +31,7 @@ export class EventManager extends EventDispatcher {
     dom.addEventListener('mousedown',(event)=>{
       // 选取物体的操作符
       raycaster.setFromCamera(mouse, this.camera)
-      const intersection = raycaster.intersectObjects(scene.children, false)
+      const intersection = raycaster.intersectObjects(scene.children)
       this.dispatchEvent({
         type:"mousedown",
         intersection
@@ -52,7 +52,7 @@ export class EventManager extends EventDispatcher {
         // 选取物体的操作符
       raycaster.setFromCamera(mouse, this.camera)
 
-      const intersection = raycaster.intersectObjects(scene.children, false)
+      const intersection = raycaster.intersectObjects(scene.children)
       this.dispatchEvent({
         type:"mousemove",
         intersection
@@ -88,7 +88,7 @@ export class EventManager extends EventDispatcher {
     dom.addEventListener('mouseup',(event)=>{
       raycaster.setFromCamera(mouse, this.camera)
 
-      const intersection = raycaster.intersectObjects(scene.children, false)
+      const intersection = raycaster.intersectObjects(scene.children)
       this.dispatchEvent({
         type:"mouseup",
         intersection
@@ -105,7 +105,7 @@ export class EventManager extends EventDispatcher {
 
       raycaster.setFromCamera(mouse, this.camera)
 
-      const intersection = raycaster.intersectObjects(scene.children, false)
+      const intersection = raycaster.intersectObjects(scene.children)
       this.dispatchEvent({
         type:"click",
         intersection

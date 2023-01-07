@@ -2,7 +2,7 @@ import { AxesHelper, DirectionalLightHelper, GridHelper, HemisphereLightHelper, 
 import {pointLight,spotLight,directionalLight,hemisphereLight} from './lights'
 
 const axeshelper:AxesHelper  = new AxesHelper(500)
-const gridHelper:GridHelper  = new GridHelper(500,20,'rgb(200,200,200)','rgb(100,100,100)')
+const gridHelper:GridHelper  = new GridHelper(800,20,'rgb(200,200,200)','rgb(100,100,100)')
 
 const pointLightHelper:PointLightHelper = new PointLightHelper(pointLight,pointLight.distance,pointLight.color)
 
@@ -18,7 +18,7 @@ export const HelperList:Object3D[] =[]
 
 HelperList.push(
   axeshelper,
-  // gridHelper,
+  gridHelper,
   // pointLightHelper,
   spotLightHelper,
   // directionalLightHelper,

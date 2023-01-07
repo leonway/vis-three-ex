@@ -109,24 +109,28 @@ class Engine {
       }
     })
 
-    renderer.domElement.addEventListener("click", (event) => {
+    eventManager.addEventListener("click", (event) => {
       // 拖动结束的操作
       if (transing) {
         transing = false;
         return false;
       }
 
-      // // 选取物体的操作
-      // raycaster.setFromCamera(mouse, this.camera)
-
-      // scene.remove(transformControls)
-      // const intersection = raycaster.intersectObjects(scene.children)
-
-      // if (intersection.length) {
-      //  const object = intersection[0].object
-      //  scene.add(transformControls)
-      //  transformControls.attach(object)
-      // }
+      if (event.intersection.length) {
+       const object = event.intersection[0].object
+        console.log('object',object);
+       if(object.type==="TransformControlsPlane"){        
+        transformControls.detach()
+        scene.remove(transformControls)
+       }else{
+        scene.add(transformControls)
+        transformControls.attach(object)
+       }
+     
+      }else{
+        transformControls.detach()
+        scene.remove(transformControls)
+      }
     });
 
     const renderFunc = ()=>{
