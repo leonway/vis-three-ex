@@ -1,7 +1,7 @@
 import { Group, Mesh, MeshBasicMaterial, MeshStandardMaterial, PlaneGeometry, Sprite, SpriteMaterial } from "three"
-import { pictureTexture, tipsTexture } from "./textures"
+import { pictureTexture, pricturesTextureList, tipsTexture, tipsTextureList } from "./textures"
 import { getFrame } from './load-model';
-
+import pirturesConfigure from '../../../assets/json/pictures.json'
 
 export const getGroup: () => Promise<Group> = async (): Promise<Group> => {
   const group = new Group()
@@ -50,3 +50,63 @@ export const getGroup: () => Promise<Group> = async (): Promise<Group> => {
   group.position.y=70
   return group
 }
+
+
+export const groupListPromise = new Promise<Group[]>((resolve, reject) => {
+  getFrame()
+    .then((frame) => {
+      const groupList: Group[] = [];
+      const spacing = 200;
+      const distance = ((pricturesTextureList.length - 1) * spacing) / 2;
+      const pictureGeometry = new PlaneGeometry(192, 108);
+      const tipsGeometry = new PlaneGeometry(16, 9);
+
+      pirturesConfigure.forEach((elem, i, arr) => {
+        const pictureTexture = pricturesTextureList[i];
+        const tipsTexture = tipsTextureList[i];
+        const group = new Group();
+
+        // 图片
+        const picture: Mesh = new Mesh(
+          pictureGeometry,
+          new MeshStandardMaterial({
+            map: pictureTexture,
+          })
+        );
+
+        picture.scale.set(0.3, 0.3, 0.3);
+
+        group.add(picture);
+
+        // 标签
+        const tips: Mesh = new Mesh(
+          tipsGeometry,
+          new MeshStandardMaterial({
+            map: tipsTexture,
+          })
+        );
+
+        tips.position.set(0, -30, 0);
+
+        group.add(tips);
+
+        // 相框
+        const newFrame = frame!.clone();
+
+        group.add(newFrame);
+
+        group.position.y = 90;
+        // group.position.z = -70;
+        group.position.x = i * spacing - distance;
+
+        group.scale.set(2, 2, 2);
+
+        groupList.push(group);
+      });
+
+      resolve(groupList);
+    })
+    .catch((err) => {
+      reject(err);
+    });
+});

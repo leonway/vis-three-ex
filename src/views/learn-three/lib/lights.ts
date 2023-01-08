@@ -8,7 +8,7 @@ directionalLight.lookAt(new Vector3(20,20,20))
 directionalLight.position.set(100,100,100)
 
 export const spotLight:SpotLight = new SpotLight('rgb(255,255,255)',1,2000,Math.PI/180*30,0,0)
-spotLight.position.set( 0, 50, 300 ); 
+spotLight.position.set( 0, 50, 800 ); 
 spotLight.target = wall
 spotLight.castShadow = true
 

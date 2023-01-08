@@ -6,7 +6,7 @@ export const BasicObjectList:Object3D[] = []
 
 // 地面
 const stage:Mesh = new Mesh(
-  new BoxGeometry(600,10,500),
+  new BoxGeometry(1000,10,500),
   new MeshStandardMaterial({
     color:'rgb(0,75,75)',
     roughness:0 
@@ -18,7 +18,7 @@ stage.castShadow = true
 
 // 墙面
 export const wall:Mesh = new Mesh(
-  new BoxGeometry(600,100,5),
+  new BoxGeometry(1000,200,5),
   new MeshStandardMaterial({
     color:'green',
     // roughness:0
