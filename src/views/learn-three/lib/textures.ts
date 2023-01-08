@@ -4,12 +4,12 @@ import pirturesConfigure from '../../../assets/json/pictures.json'
 
  const textureLoader:TextureLoader = new TextureLoader()
 
-export const pictureTexture :Texture = textureLoader.load('/texture1.jpeg')
+// export const pictureTexture :Texture = textureLoader.load('/texture1.jpeg')
 
 
-export const frameColorTexture = textureLoader.load('/custom-model/Tiles090_1K-JPG/Tiles090_1K_Color.jpg')
-export const frameroughnessTexture = textureLoader.load('/custom-model/Tiles090_1K-JPG/Tiles090_1K_Roughness.jpg')
-export const frameDisplacementTexture = textureLoader.load('/custom-model/Tiles090_1K-JPG/Tiles090_1K_Displacement.jpg')
+// export const frameColorTexture = textureLoader.load('/custom-model/Tiles090_1K-JPG/Tiles090_1K_Color.jpg')
+// export const frameroughnessTexture = textureLoader.load('/custom-model/Tiles090_1K-JPG/Tiles090_1K_Roughness.jpg')
+// export const frameDisplacementTexture = textureLoader.load('/custom-model/Tiles090_1K-JPG/Tiles090_1K_Displacement.jpg')
 
 export const tipsTexture = new CanvasTexture(
   new CanvasEditor(1920,1080)
@@ -42,11 +42,9 @@ export const tipsTexture = new CanvasTexture(
   )
 
   
-export const pricturesTextureList: Texture[] = [];
 export const tipsTextureList: CanvasTexture[] = [];
 
 pirturesConfigure.forEach((elem) => {
-  pricturesTextureList.push(textureLoader.load(elem.url));
   tipsTextureList.push(
     new CanvasTexture(
       // .preview()

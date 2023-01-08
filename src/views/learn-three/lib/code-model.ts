@@ -1,5 +1,4 @@
 import { BufferAttribute, BufferGeometry, Color, DoubleSide, Mesh, MeshStandardMaterial, Object3D } from "three";
-import { pictureTexture } from "./textures";
 import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelper'
 
 export const CodeModelList: Object3D[] = []

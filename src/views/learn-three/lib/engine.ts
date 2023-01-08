@@ -31,7 +31,7 @@ class Engine {
     renderer.shadowMap.enabled=true
 
     const camera = new PerspectiveCamera(45,dom.offsetWidth/dom.offsetHeight,1,1000)
-    camera.position.set(100,100,100)
+    camera.position.set(0,100,600)
     camera.lookAt(new Vector3(0,0,0))
     camera.up = new Vector3(0,1,0)
   

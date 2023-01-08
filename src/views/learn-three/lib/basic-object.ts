@@ -1,6 +1,4 @@
  import { BoxGeometry, Color, CylinderGeometry, Line, Material, Mesh, MeshStandardMaterial, Object3D, PlaneGeometry, Points, PointsMaterial, SphereGeometry } from "three";
- import {pictureTexture} from './textures'
- import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelper'
 
 export const BasicObjectList:Object3D[] = []
 
